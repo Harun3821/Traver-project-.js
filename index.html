@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Travel javaScprit WebSite</title>
+</head>
+<body>
+    <header class="flex justify-center items-center font-semibold ">
+      <div class="flex gap-5">
+        <h2>home<span id="card-count" class="font-semibold text-[#ff2a00]">0</span></h2>
+        <h3>Total = <span id="total-cost">4</span></h3>
+      </div>
+    </header>
+    <section class="flex justify-center items-center py-6">
+        <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Officiis unde, asperiores neque tempore ea odit?</p>
+        <h1 class="font-semibold text-center">Total bught <span id="total-bught">900</span>$</h1>
+        </div>
+    </section>
+    
+    <section class="flex justify-center items-center py-10 gap-6">
+       <div class="space-y-3">
+        <div class="card w-40  bg-base-100 shadow-2xl rounded-md text-center items-center font-semibold">
+            <h2>Shajek</h2>
+            <p>cost =<span class="price">300</span>$</p>
+            <button  class="btn-Add  p-3 bg-gray-500 rounded-md">add to cart</button>
+          </div>
+          <div class="plyrer-item  card w-40  bg-base-100 shadow-2xl rounded-md text-center items-center font-semibold">
+            <h2>Dhaka</h2>
+            <p>cost =<span class="price">300</span>$</p>
+            <button  class="btn-Add  p-3 bg-gray-500 rounded-md">add to cart</button>
+          </div>
+          <div class="plyrer-item  card w-40  bg-base-100 shadow-2xl rounded-md text-center items-center font-semibold">
+            <h2>Dhaka</h2>
+            <p>cost =<span class="price">300</span>$</p>
+            <button  class="btn-Add  p-3 bg-gray-500 rounded-md">add to cart</button>
+          </div>
+       </div>
+         <div class="space-y-3">
+            <div class="plyrer-item  card w-40  bg-base-100 shadow-2xl rounded-md text-center items-center font-semibold">
+                <h2>Khulna</h2>
+                <p>cost=<span class="price">500</span>$</p>
+                <button  class="btn-Add  p-3 bg-gray-500 rounded-md">add to cart</button>
+              </div>
+              <div class="plyrer-item  card w-40  bg-base-100 shadow-2xl rounded-md text-center items-center font-semibold">
+                <h2>Cox Bazar</h2>
+                <p>cost =<span class="price">300</span>$</p>
+                <button  class="btn-Add  p-3 bg-gray-500 rounded-md">add to cart</button>
+              </div>
+              <div class="plyrer-item  card w-40  bg-base-100 shadow-2xl rounded-md text-center items-center font-semibold">
+                <h2>Cox Bazar</h2>
+                <p>cost =<span class="price">300</span>$</p>
+                <button  class="btn-Add  p-3 bg-gray-500 rounded-md">add to cart</button>
+              </div>
+         </div>
+    
+            <div class="bg-slate-100 shadow-2xl w-96 h-60">
+            <h1 class="font-semibold text-center border-b-2 border-fuchsia-800 text-[22px]">Card</h1>
+           <div id="Select-continer" class="border-b-2 grid grid-cols-3  border-fuchsia-800"></div>
+
+            <h2 class="font-semibold text-center">Total Cost<span id="total-price">0</span>$</h2>
+            <div class="flex justify-center items-center gap-2 border-b-2 border-fuchsia-800 border-spacing-8">
+              <button class="p-2 bg-yellow-200 font-semibold">bus + <span onclick=" GranTotalPrice('bus')">100</span></button>
+              <button class="p-2 bg-yellow-200 font-semibold">Train - <span onclick=" GranTotalPrice('train')">200</span></button>
+              <button class="p-2 bg-yellow-200 font-semibold">Flight + <span onclick=" GranTotalPrice('flight')">500</span></button>
+       
+            </div>
+            <h3 class="font-semibold text-center">Grand Total Cost : <span id="Gran-Total">0</span>$</h3>
+        </div>
+    </section>
+  
+    <script src="travel.js"></script>
+</body>
+</html>
